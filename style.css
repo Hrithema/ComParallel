@@ -1,0 +1,308 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Caveat", cursive;
+    background-color: #111b1e;
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Landing Page */
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;  /* Adjust spacing between child elements */
+}
+
+.logo {
+    width: 400px;
+    margin-bottom: 70px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #f5d7b8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e1b399;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: fixed;
+    top: -200px;  /* Initially hidden */
+    left: 0;
+    width: 100%;
+    background-color: #1a252a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    transition: top 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  /* Ensures navbar stays above other elements */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 100px;
+    margin-right: 100px;
+}
+
+.tagline {
+    font-size: 18px;
+}
+
+/* Categories Section */
+.categories {
+    height: 100;
+    background-color: #f5d7b8;
+    color: black;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Category Buttons */
+.category-btn {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.category-btn:hover {
+    background-color: #e1b399;
+    transform: scale(1.05);
+}
+
+/* Dark Button */
+.btn-dark {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+/* Login Page Styles */
+.login-container {
+    width: 350px;  /* Increased width for better spacing */
+    height: auto;
+    background: #1a252a;
+    padding: 30px;
+    margin: 80px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.login-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.login-form input {
+    width: 100%;         
+    max-width: 320px;    
+    padding: 10px;       
+    margin: 12px 0;      
+    border: none;
+    border-radius: 8px;  
+    font-size: 16px;     
+}
+
+/* Specific sizes for Email and Password */
+.email-input {
+    width: 100%;
+    max-width: 360px;
+    height: 55px;
+}
+
+.password-input {
+    width: 100%;
+    max-width: 340px;
+    height: 50px;
+}
+
+/* Login Button */
+.btn-login {
+    width: 100%;
+    background-color: #f5d7b8;
+    color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.btn-login:hover {
+    background-color: #e1b399;
+}
+
+/* Forgot Password & Signup Links */
+a {
+    color: #f5d7b8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #e1b399;
+}
+
+
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Caveat", cursive;
+    background-color: #111b1e;
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Signup Page Styles */
+.signup-container {
+    width: 400px;
+    background: #1a252a;
+    padding: 40px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.signup-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Updated Input Fields */
+.signup-form input {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Error Messages */
+.error-message {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Button Styles */
+.btn-signup {
+    width: 100%;
+    background-color: #f5d7b8;
+    color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.btn-signup:hover {
+    background-color: #e1b399;
+}
+
+/* Show Password Checkbox */
+.show-password {
+    display: flex;
+    align-items: center; /* Aligns checkbox and label text */
+    font-size: 16px;
+    margin: 10px 0;
+    color: #f5d7b8;
+    cursor: pointer;
+}
+
+.show-password input {
+    margin-right: 8px; /* Creates spacing between checkbox and label */
+    width: 16px; /* Adjust checkbox size */
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Signup Text */
+.signup-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.signup-text a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f5d7b8;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    color: #e1b399;
+}
+

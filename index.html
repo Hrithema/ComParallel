@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComParallel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- First Section: Landing Page -->
+    <section class="landing">
+      <img src="assets/logo.png" alt="ComParallel Logo" class="logo" />
+      <button onclick="scrollToCategories()" class="btn">
+        Let's get started →
+      </button>
+    </section>
+
+    <!-- Sticky Navigation Bar (Initially Hidden) -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-content">
+        <img src="assets/logo.png" alt="ComParallel Logo" class="nav-logo" />
+        <p class="tagline">Compare Prices Smartly. Save More.</p>
+      </div>
+    </nav>
+
+    <!-- Second Section: Categories -->
+    <section id="categories" class="categories">
+          
+      <h2>Categories</h2>
+      <div class="category-container">
+        <button class="category-btn" onclick="location.href='home.html'">Home</button>
+        <button class="category-btn" onclick="location.href='mobiles.html'">Mobiles</button>
+        <button class="category-btn" onclick="location.href='appliances.html'">Appliances</button>
+        <button class="category-btn" onclick="location.href='sports.html'">Sports</button>
+        <button class="category-btn" onclick="location.href='fashion.html'">Fashion</button>
+        <button class="category-btn" onclick="location.href='beauty.html'">Beauty</button>
+      </div>
+      <button class="btn-dark" onclick="location.href='login.html'">Login to start →</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ComParallel</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to validate form
+        function validateLoginForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === "" || password === "") {
+                alert("Please fill in both email and password.");
+                return false;
+            }
+
+            // If validation passes, redirect to official.html
+            window.location.href = "official.html";
+            return false; // Prevent form submission
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <img src="assets/logo.png" alt="ComParallel Logo" class="login-logo">
+        <h2>Login to Your Account</h2>
+        
+        <!-- Form for login -->
+        <form class="login-form" onsubmit="return validateLoginForm()">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <!-- Login Button -->
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+</body>
+</html>

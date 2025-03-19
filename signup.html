@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | ComParallel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Signup Container -->
+    <div class="signup-container">
+        <img src="assets/logo.png" alt="ComParallel Logo" class="signup-logo">
+        <h2>Create Your Account</h2>
+        
+        <form class="signup-form" id="signup-form">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <p class="error-message" id="name-error"></p>
+
+            <input type="email" id="email" placeholder="Email" required>
+            <p class="error-message" id="email-error"></p>
+
+            <input type="password" id="password" placeholder="Password" required>
+            <p class="error-message" id="password-error"></p>
+
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            <p class="error-message" id="confirm-password-error"></p>
+
+            <label class="show-password">
+                <input type="checkbox" onclick="togglePassword()"> Show Password
+            </label>            
+
+            <button type="submit" class="btn-signup">Sign Up</button>
+            <p id="form-error-message" class="error-message"></p>
+        </form>
+        
+        <p class="signup-text">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
